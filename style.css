@@ -1,0 +1,21 @@
+#container {
+    display: flex;
+    flex-direction: column;
+    width: 500px;
+    height: 500px;
+}
+
+.row {
+    display: flex;
+    flex: 1;
+}
+
+.square {
+    /* prevents outline overlap */
+    outline: 1px solid;
+    margin-top: 1px;
+    margin-left: 1px;
+    
+    /* maintains square shape of each element */
+    aspect-ratio: 1/1;
+}
