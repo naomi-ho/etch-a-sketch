@@ -1,3 +1,7 @@
+html {
+
+}
+
 body {
     display: flex;
     flex-direction: column;
@@ -22,8 +26,8 @@ p {
 #grid {
     display: flex;
     flex-direction: column;
-    width: 600px;
-    height: 600px;
+    width: 500px;
+    height: 500px;
 }
 
 .row {
