@@ -1,9 +1,8 @@
+const DEFAULT_DIMENSION = 16;
+
 const grid = document.getElementById("grid");
 const dimensionRange = document.getElementById("dimension-range");
 const dimensionValue = document.getElementById("dimension-value");
-
-// on drag of slider, get element and pass through into makeGrid
-
 
 function makeGrid (dimension) {
     for (let i = 0; i < dimension; i++) {
@@ -19,7 +18,7 @@ function makeGrid (dimension) {
             square.onmouseenter = function() {mouseEnter()};
 
             function mouseEnter() {
-                square.style.backgroundColor = "black";
+                square.style.backgroundColor = "white";
             }
 
             row.appendChild(square);
@@ -28,10 +27,14 @@ function makeGrid (dimension) {
 }
 
 function getDimension() {
-    makeGrid(16);
+    // creates default 16 x 16 grid on load
+    makeGrid(DEFAULT_DIMENSION);
+
+    // changes the grid size according to slider value
     dimensionRange.addEventListener("click", (event) => {
         let dimension = parseInt(dimensionValue.value);
         console.log(dimension);
+        // reloads grid
         grid.textContent = "";
         makeGrid(dimension);
     });
