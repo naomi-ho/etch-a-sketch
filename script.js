@@ -1,4 +1,4 @@
-const grid = document.getElementById("container");
+const grid = document.getElementById("grid");
 
 function makeGrid (num) {
     for (let i = 0; i < num; i++) {
