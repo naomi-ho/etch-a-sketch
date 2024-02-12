@@ -33,7 +33,6 @@ function getDimension() {
     // changes the grid size according to slider value
     dimensionRange.addEventListener("click", (event) => {
         let dimension = parseInt(dimensionValue.value);
-        console.log(dimension);
         // reloads grid
         grid.textContent = "";
         makeGrid(dimension);
