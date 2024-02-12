@@ -3,15 +3,21 @@
     <head>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Etch-A-Sketch</title>
+        <title>Reverse Etch-A-Sketch</title>
         <script src="script.js" defer></script>
         <link rel="stylesheet" href="style.css">
     </head>
     <body>
-        <div class="input">
-            <input type="range" id="dimension-range" value="16" min="1" max="100" onclick="this.nextElementSibling.value = this.value">
-            <output id="dimension-value">16</output>
+        <h1>REVERSE ETCH-A-SKETCH</h1>
+        <div id="contents">
+            <div class="input">
+                <p id="dimension-text">GRID SIZE:</p>
+                <div class="dimension-slider">
+                    <output id="dimension-value">16</output> 
+                    <input type="range" id="dimension-range" value="16" min="1" max="100" onclick="this.nextElementSibling.value = this.value">
+                </div>
+            </div>
+            <div id="grid"></div>    
         </div>
-        <div id="grid"></div>
     </body>
 </html>
