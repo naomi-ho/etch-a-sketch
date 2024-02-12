@@ -10,6 +10,13 @@ function makeGrid (num) {
             // create squares within rows
             const square = document.createElement("div");
             square.className = "square";
+            // changes div's color when hovered over
+            square.onmouseenter = function() {mouseEnter()};
+
+            function mouseEnter() {
+                square.style.backgroundColor = "black";
+            }
+
             row.appendChild(square);
         }
     }
