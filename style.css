@@ -19,10 +19,16 @@ body {
     text-align: center;
     color: white;
     background-color: rgb(53, 52, 52);
-    font-family: 'Comic Sans MS', cursive, sans-serif;
+    font-family: "Rubik Scribble", monospace, sans-serif;
+}
+
+h1 {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
 }
 
 p {
+    font-size: 1.5rem;
     margin-bottom: 10px;
 }
 
@@ -54,8 +60,8 @@ p {
     -webkit-flex-direction: column;
     -ms-flex-direction: column;
     flex-direction: column;
-    width: 600px;
-    height: 600px;
+    width: 500px;
+    height: 500px;
 }
 
 .row {
@@ -82,7 +88,7 @@ p {
     position: relative;
 }
 
-/* Set height equal to width using padding */
+/* set height equal to width using padding */
 .square::before {
     content: "";
     display: block;
